@@ -11,7 +11,10 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatSelectModule} from '@angular/material/select';
 import {MatButtonModule} from '@angular/material/button';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -27,6 +30,9 @@ import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform
     MatRadioModule,
     MatSelectModule,
     MatButtonModule,
+    MatProgressSpinnerModule,
+    HttpClientModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     NoopAnimationsModule
   ]

@@ -13,9 +13,15 @@
   margin: 0 auto;
   width: 66%;
 }
+.mat-spinner {
+  zoom: 20%;
+}
 .mat-form-field {
   margin-top: 10px;
 }
 .mr {
   margin-top:10px;
+}
+.mat-radio-button.mat-accent .mat-radio-inner-circle {
+  background-color: purple !important;
 }
