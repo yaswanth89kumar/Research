@@ -42,7 +42,10 @@ export class HomeComponent implements OnInit {
 
   createBHPForm(): void {
     this.bhpForm = this.fb.group({
-      area: new FormControl(this.bhp.area, [Validators.required]),
+      area: new FormControl(this.bhp.area, [
+        Validators.required,
+        Validators.pattern('^[0-9]*$'),
+        Validators.minLength(3)]),
       bedrooms: new FormControl(this.bhp.bedrooms, [Validators.required]),
       bathrooms: new FormControl(this.bhp.bathrooms, [Validators.required]),
       location: new FormControl(this.bhp.location, [Validators.required])
